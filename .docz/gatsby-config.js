@@ -31,7 +31,7 @@ const config = {
         mdxExtensions: ['.md', '.mdx'],
         docgenConfig: {},
         menu: [
-          'Replace_My_App',
+          'My_App',
           'Basics',
           'Getting Started',
           'Base',

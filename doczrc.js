@@ -1,7 +1,7 @@
 export default {
   files: '**/*.mdx',
   menu: [
-    'Replace_My_App',
+    'My_App',
     'Getting Started',
     'Configuration',
     'Components',

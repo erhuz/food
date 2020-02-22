@@ -3,7 +3,7 @@
     "title": "My App",
     "description": "My awesome app using docz",
     "menu": [
-      "Replace_My_App",
+      "My_App",
       "Getting Started",
       "Configuration",
       "Components",
@@ -22,7 +22,7 @@
     {
       "key": "README.mdx",
       "value": {
-        "name": "Replace_My_App",
+        "name": "My_App",
         "route": "/",
         "order": 1,
         "id": "075c8e9dd56c748f3da128a33861a770",
@@ -33,9 +33,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "replace_my_app",
+            "slug": "My_App",
             "depth": 1,
-            "value": "Replace_My_App"
+            "value": "My_App"
           }
         ]
       }
