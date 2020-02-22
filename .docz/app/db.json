@@ -1,0 +1,176 @@
+{
+  "config": {
+    "title": "My App",
+    "description": "My awesome app using docz",
+    "menu": [
+      "Replace_My_App",
+      "Getting Started",
+      "Configuration",
+      "Components",
+      "Documentation",
+      "Advanced",
+      "Customization"
+    ],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-",
+    "files": "**/*.mdx"
+  },
+  "entries": [
+    {
+      "key": "README.mdx",
+      "value": {
+        "name": "Replace_My_App",
+        "route": "/",
+        "order": 1,
+        "id": "075c8e9dd56c748f3da128a33861a770",
+        "filepath": "README.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/README.mdx",
+        "link": "",
+        "slug": "readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "replace_my_app",
+            "depth": 1,
+            "value": "Replace_My_App"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/config/config.mdx",
+      "value": {
+        "name": "Basic Configuration",
+        "route": "/configuration/basic",
+        "menu": "Configuration",
+        "id": "14b1244ad8fb1f400efc366bceaf3653",
+        "filepath": "src/config/config.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/config/config.mdx",
+        "link": "",
+        "slug": "src-config-config",
+        "headings": [
+          {
+            "slug": "configuration",
+            "depth": 1,
+            "value": "Configuration"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/core/core.mdx",
+      "value": {
+        "name": "Core",
+        "route": "/advanced/core",
+        "menu": "Advanced",
+        "id": "101c12b5ca5d3e3d10922b7cdaf55491",
+        "filepath": "src/core/core.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/core/core.mdx",
+        "link": "",
+        "slug": "src-core-core",
+        "headings": [
+          {
+            "slug": "core",
+            "depth": 1,
+            "value": "Core"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/docs/docs.mdx",
+      "value": {
+        "name": "Documentation",
+        "route": "/docs",
+        "id": "1fa9ef282d5a30dd1dcad9f3bb3ece75",
+        "filepath": "src/docs/docs.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/docs/docs.mdx",
+        "link": "",
+        "slug": "src-docs-docs",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "documentation",
+            "depth": 1,
+            "value": "Documentation"
+          },
+          {
+            "slug": "documentation-structure",
+            "depth": 2,
+            "value": "Documentation structure"
+          },
+          {
+            "slug": "docz",
+            "depth": 2,
+            "value": "Docz"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/theme/theme.mdx",
+      "value": {
+        "name": "Theming",
+        "route": "/configuration/theming",
+        "menu": "Configuration",
+        "id": "faa99d51bff7a23b25b89d81c538d657",
+        "filepath": "src/theme/theme.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/theme/theme.mdx",
+        "link": "",
+        "slug": "src-theme-theme",
+        "headings": [
+          {
+            "slug": "theming",
+            "depth": 1,
+            "value": "Theming"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/docs/other/basics.mdx",
+      "value": {
+        "name": "Basics",
+        "route": "/getting-started/basics",
+        "menu": "Getting Started",
+        "id": "33bf4272d7a80c0a4b6b2efdf97079c7",
+        "filepath": "src/docs/other/basics.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/docs/other/basics.mdx",
+        "link": "",
+        "slug": "src-docs-other-basics",
+        "headings": [
+          {
+            "slug": "basics",
+            "depth": 1,
+            "value": "Basics"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/docs/other/technologies.mdx",
+      "value": {
+        "name": "Technologies",
+        "route": "/getting-started/technologies",
+        "menu": "Getting Started",
+        "order": 3,
+        "id": "abc311404fa0ddebc5c6ab771b07f1e0",
+        "filepath": "src/docs/other/technologies.mdx",
+        "fullpath": "/Users/erhuz/Sites/my-app/src/docs/other/technologies.mdx",
+        "link": "",
+        "slug": "src-docs-other-technologies",
+        "headings": [
+          {
+            "slug": "technologies",
+            "depth": 1,
+            "value": "Technologies"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
