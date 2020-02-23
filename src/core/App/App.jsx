@@ -8,20 +8,28 @@ import Navbar from 'partials/Navbar';
 import './App.css';
 import Welcome from 'pages/Welcome';
 
+const localStorage = window.localStorage;
+
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      isAuthenticated: false
+      isAuthenticated: localStorage.getItem('isAuthenticated') || false,
     };
   }
 
   setAuthenticated = () => {
-    this.setState({ isAuthenticated: !this.state.isAuthenticated });
+    this.setState({ isAuthenticated: !this.state.isAuthenticated }, () => {
+      localStorage.setItem('isAuthenticated', this.state.isAuthenticated);
+    });
   }
 
   render() {
-    if(this.state.isAuthenticated){
+    console.log(localStorage.getItem('isAuthenticated'));
+    console.log(this.state.isAuthenticated);
+
+
+    if(this.state.isAuthenticated === true){
       return (
         <Router>
           <Grommet plain>
@@ -38,7 +46,7 @@ class App extends Component {
         <Router>
           <Grommet plain>
             <Switch>
-              <Route exact path='/' render={(props) => <Welcome {...props} />} />
+              <Route exact path='/' render={(props) => <Welcome setAuthenticated={this.setAuthenticated} {...props} />} />
               <Route render={(props) => <NotFound {...props} />} />
             </Switch>
           </Grommet>
