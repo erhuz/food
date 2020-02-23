@@ -24,7 +24,7 @@ const Welcome = (props) => {
       <Main style={overflowHiddenStyles} pad="large">
         <Box fill={true} justify="around" direction="column">
           <Box align="center" animation={{"type": "zoomIn", "delay": 0, "duration": 500, "size": "xlarge"}}>
-            <Heading alignSelf="center">Food</Heading>
+            <Heading alignSelf="center">Grocery List</Heading>
             <Paragraph alignSelf="center">What should I buy at the grocery store?</Paragraph>
           </Box>
 
