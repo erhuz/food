@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      isAuthenticated: localStorage.getItem('isAuthenticated') || false,
+      isAuthenticated: localStorage.getItem('isAuthenticated') === "true" || false,
     };
   }
 
