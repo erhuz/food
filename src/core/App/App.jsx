@@ -7,6 +7,7 @@ import Navbar from 'partials/Navbar';
 
 import './App.css';
 import Welcome from 'pages/Welcome';
+import Food from 'pages/Food/Food';
 
 const localStorage = window.localStorage;
 
@@ -35,6 +36,7 @@ class App extends Component {
           <Grommet plain>
             <Switch>
               <Route exact path='/' render={(props) => <Home {...props} />} />
+              <Route exact path='/food' render={(props) => <Food {...props} />} />
               <Route render={(props) => <NotFound {...props} />} />
             </Switch>
             <Navbar />
