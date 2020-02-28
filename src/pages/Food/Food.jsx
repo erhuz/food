@@ -7,8 +7,8 @@ const Food = (props) => {
   console.log(props);
 
   const wrapperStyles = {
-    background: 'linear-gradient(135deg,rgba(253,111,255,0.4) 0%,rgba(129,252,237,0.4) 50%,rgba(111,255,176,0.0) 75%,rgba(111,255,176,0.0) 100%)',
-    height: 'calc(100vh - 52px)',
+    background: 'repeating-linear-gradient(135deg,rgba(253,111,255,0.4) 0%,rgba(129,252,237,0.4) 55%,rgba(111,255,176,0.4) 100%)',
+    minHeight: 'calc(100vh - 52px)',
   }
 
   const wrapperAnimation = {
@@ -57,7 +57,7 @@ const Food = (props) => {
       <Box justify="start" pad="small">
 
         {meals}
-      <div style={{padding: 26}}></div>
+      {/* <div style={{padding: 26}}></div> */}
       </Box>
     </Box>
   );
