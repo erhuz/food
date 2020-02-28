@@ -27,16 +27,20 @@ const Navbar = ({items}) => {
     "size": "xsmall"
   }
 
+  const navItemPadding = {
+    padding: 12,
+  }
+
   return (
     <Box animation={containerAnimation}>
-      <Nav style={navStyles} direction="row" justify="around" background="brand" pad="medium">
-        <Link to='/'>
+      <Nav style={navStyles} direction="row" justify="around" background="brand" pad="xsmall">
+        <Link style={navItemPadding} to='/'>
           <HomeIcon />
         </Link>
-        <Link to='/food'>
+        <Link style={navItemPadding} to='/food'>
           <CafeteriaIcon />
         </Link>
-        <Link to='/settings'>
+        <Link style={navItemPadding} to='/settings'>
           <UserSettingsIcon />
         </Link>
       </Nav>
