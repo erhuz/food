@@ -57,7 +57,6 @@ const Food = (props) => {
       <Box justify="start" pad="small">
 
         {meals}
-      {/* <div style={{padding: 26}}></div> */}
       </Box>
     </Box>
   );
