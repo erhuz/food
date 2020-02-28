@@ -76,7 +76,6 @@ const Food = (props) => {
         <Heading level="2">What do you want to eat?</Heading>
       </Header>
       <Box justify="start" pad="small">
-
         {meals}
       </Box>
     </Box>
