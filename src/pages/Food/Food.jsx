@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Button, Heading, Header } from 'grommet';
+import { Box, Stack, Button, Heading, Header, Paragraph } from 'grommet';
 import { Add as AddIcon } from 'grommet-icons';
 
 const Food = (props) => {
@@ -23,8 +23,21 @@ const Food = (props) => {
   }
 
   const cardStyles = {
-    border: '1px solid #999999',
-    background: '#F2F2F2',
+    // border: '1px solid #999999',
+    // background: '#F2F2F2',
+    borderRadius: 8,
+  }
+
+  const cardBackground = {
+    "color": "neutral-1",
+    "dark": 0.2,
+    "opacity": 0.4,
+    "position": "bottom",
+    "image": "url(https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80)"
+  }
+
+  const innerCardStyles = {
+    backgroundColor: 'rgba(34,34,34,0.75)',
     borderRadius: 8,
   }
 
@@ -33,8 +46,16 @@ const Food = (props) => {
   for (let index = 0; index < 15; index++) {
     meals.push(
       <Stack anchor="top-right">
-        <Box pad="large" margin="medium" elevation="small" style={cardStyles}>
-          <Heading margin="xsmall" level="4">Tacogratäng</Heading>
+        <Box margin="medium" elevation="medium" style={cardStyles} background={cardBackground}>
+          <Box pad="large" style={innerCardStyles}>
+            <Heading margin="xsmall" level="4">Tacogratäng</Heading>
+            <Paragraph>
+              Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </Paragraph>
+          </Box>
         </Box>
         <Button
           primary
