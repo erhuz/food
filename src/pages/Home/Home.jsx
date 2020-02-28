@@ -5,7 +5,7 @@ import {Group as GroupIcon, UserAdd as UserAddIcon } from 'grommet-icons';
 const Home = () => {
 
   const props_hasHousehold = false;
-  const containerAnimation = {
+  const wrapperAnimation = {
     "type": "fadeIn",
     "delay": 0,
     "duration": 500,
@@ -24,7 +24,7 @@ const Home = () => {
     )
   } else {
     return (
-      <Box style={wrapperStyles} animation={containerAnimation} direction="column" justify="around" pad="medium" fill={true}>
+      <Box style={wrapperStyles} animation={wrapperAnimation} direction="column" justify="around" pad="medium" fill={true}>
         <Box>
           <Heading textAlign="center" level="2">
             You're not part of a household.
