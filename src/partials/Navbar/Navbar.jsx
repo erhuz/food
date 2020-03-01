@@ -4,6 +4,7 @@ import {
   Home as HomeIcon,
   UserSettings as UserSettingsIcon,
   Cafeteria as CafeteriaIcon,
+  Task as TaskIcon,
 } from "grommet-icons";
 import { Link } from 'react-router-dom';
 
@@ -39,6 +40,9 @@ const Navbar = ({items}) => {
         </Link>
         <Link style={navItemPadding} to='/food'>
           <CafeteriaIcon />
+        </Link>
+        <Link style={navItemPadding} to='/grocery-list'>
+          <TaskIcon />
         </Link>
         <Link style={navItemPadding} to='/settings'>
           <UserSettingsIcon />
