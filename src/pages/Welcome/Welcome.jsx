@@ -15,9 +15,6 @@ const Welcome = (props) => {
     overflow: 'hidden',
   }
 
-  console.log(props);
-
-
   return (
     <Box style={wrapperStyles}>
 
