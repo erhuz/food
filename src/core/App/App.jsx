@@ -8,6 +8,9 @@ import Navbar from 'partials/Navbar';
 import './App.css';
 import Welcome from 'pages/Welcome';
 import Food from 'pages/Food/Food';
+import GroceryList from 'pages/GroceryList';
+import Settings from 'pages/Settings/Settings';
+import { ToastProvider } from 'react-toast-notifications';
 
 const localStorage = window.localStorage;
 
@@ -26,22 +29,26 @@ class App extends Component {
   }
 
   render() {
-    console.log(localStorage.getItem('isAuthenticated'));
-    console.log(this.state.isAuthenticated);
-
-
     if(this.state.isAuthenticated === true){
       return (
-        <Router>
-          <Grommet plain>
-            <Switch>
-              <Route exact path='/' render={(props) => <Home {...props} />} />
-              <Route exact path='/food' render={(props) => <Food {...props} />} />
-              <Route render={(props) => <NotFound {...props} />} />
-            </Switch>
-            <Navbar />
-          </Grommet>
-        </Router>
+        <ToastProvider
+          autoDismiss
+          autoDismissTimeout={4000}
+          placement="top-center"
+        >
+          <Router>
+            <Grommet plain>
+              <Switch>
+                <Route exact path='/' render={(props) => <Home {...props} />} />
+                <Route exact path='/food' render={(props) => <Food {...props} />} />
+                <Route exact path='/grocery-list' render={(props) => <GroceryList {...props} />} />
+                <Route exact path='/settings' render={(props) => <Settings {...props} />} />
+                <Route render={(props) => <NotFound {...props} />} />
+              </Switch>
+              <Navbar />
+            </Grommet>
+          </Router>
+        </ToastProvider>
       );
     } else {
       return (
