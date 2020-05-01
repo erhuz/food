@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Header, Text } from 'grommet';
-import { User as UserIcon, Next as NextIcon } from 'grommet-icons';
+import { User as UserIcon, Next as NextIcon, Logout as LogoutIcon } from 'grommet-icons';
 
 const Settings = (props) => {
 
@@ -19,7 +19,19 @@ const Settings = (props) => {
 
   let settingsItems = [];
 
-  for (let index = 0; index < 10; index++) {
+  const itemsData = [
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Account', icon: <UserIcon />},
+    {name: 'Log out', icon: <LogoutIcon />},
+  ]
+
+  itemsData.forEach(({name, icon}) => {
+
+
     settingsItems.push(<Box
       round
       pad="large"
@@ -30,13 +42,13 @@ const Settings = (props) => {
       direction="row"
     >
       <Box direction="row">
-        <UserIcon />
-        <Text margin={{"horizontal": "small"}}> Account </Text>
+        {icon}
+        <Text margin={{"horizontal": "small"}}> {name} </Text>
       </Box>
       <NextIcon />
     </Box>);
 
-  }
+  });
 
   return (
     <Box fill={true} animation={wrapperAnimation} style={wrapperStyles}>
